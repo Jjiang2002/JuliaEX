@@ -1,6 +1,6 @@
 num_in_majors = [
-    ("Computer Science", 250), 
-    ("Math", 200), 
+    ("Computer Science", 175), 
+    ("Math", 100), 
     ("Communications", 150), 
     ("Psychology", 320), 
     ("Physics", 100),
@@ -37,4 +37,10 @@ function how_many(key, table)
         printstyled("Oops, your major doesn't exist", color=:magenta)
     end
 end
+
+how_many("Computer Science", majors_dict)
+how_many("haha", majors_dict)
+how_many("Business", majors_dict)
+how_many("Physics", majors_dict)
+how_many("Nothing", majors_dict)
 
